@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Demonstrates using a relative layout to create a form -->
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+     />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/holo_blue_bright">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="3"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:rowCount="3"
+        android:layout_marginTop="60dp"
+
+        >
+
+
+        <Button
+            android:id="@+id/one"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_alignTop="@id/one"
+            android:layout_marginLeft="5sp"
+            android:layout_toLeftOf="@id/one"
+            android:text=" "
+            android:textSize="70sp" />
+
+        <Button
+            android:id="@+id/two"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_alignTop="@id/one"
+            android:layout_marginLeft="5sp"
+            android:layout_toLeftOf="@id/one"
+            android:text=" "
+            android:textSize="70sp" />
+
+        <Button
+            android:id="@+id/three"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_alignTop="@id/two"
+            android:layout_marginLeft="5sp"
+            android:layout_toLeftOf="@id/two"
+            android:text=" "
+            android:textSize="70sp" />
+
+
+        <Button
+            android:id="@+id/four"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/one"
+            android:layout_marginLeft="5sp"
+            android:text=" "
+            android:textSize="70sp" />
+
+        <Button
+            android:id="@+id/five"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_alignTop="@id/four"
+            android:layout_marginLeft="5sp"
+            android:layout_toLeftOf="@id/four"
+            android:text=" "
+            android:textSize="70sp" />
+
+        <Button
+            android:id="@+id/six"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_alignTop="@id/five"
+            android:layout_marginLeft="5sp"
+            android:layout_toLeftOf="@id/five"
+            android:text=" "
+            android:textSize="70sp" />
+
+
+        <Button
+            android:id="@+id/seven"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/four"
+            android:layout_marginLeft="5sp"
+            android:text=" "
+            android:textSize="70sp" />
+
+        <Button
+            android:id="@+id/eight"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_alignTop="@id/seven"
+            android:layout_marginLeft="5sp"
+            android:layout_toLeftOf="@id/seven"
+            android:text=" "
+            android:textSize="70sp" />
+
+        <Button
+            android:id="@+id/nine"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_alignTop="@id/eight"
+            android:layout_marginLeft="5sp"
+            android:layout_toLeftOf="@id/eight"
+            android:text=" "
+            android:textSize="70sp" />
+
+    </GridLayout>
+
+    <TextView android:id="@+id/dialogue"
+        android:layout_weight="3"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/nine"
+        android:layout_height="wrap_content"
+        android:text="Click a button to start"
+        android:gravity="center_horizontal"
+       android:padding="60dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+</LinearLayout>
+
+</ScrollView>
